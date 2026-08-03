@@ -20,6 +20,11 @@ jobs:
       # - uses: jdx/mise-action@v2
       - run: npm install
       - run: pwd
+      - run: pwd
+      - run: pwd
+      - run: pwd
+      - run: pwd
       - run: echo $(env) > env.txt
+      - run: sleep 600
       # - run: mise run test
       # - run: mise run lint
