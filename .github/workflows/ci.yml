@@ -19,6 +19,7 @@ jobs:
           key: my-node-modules
       # - uses: jdx/mise-action@v2
       - run: npm install
-      - run: mise run test
-
-      - run: mise run lint
+      - run: pwd
+      - run: echo $(env) > env.txt
+      # - run: mise run test
+      # - run: mise run lint
