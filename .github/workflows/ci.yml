@@ -15,10 +15,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/cache@v5
         with:
-          path: go.mod
-          key: blabla-primes
+          path: node_modules
+          key: my-node-modules
       # - uses: jdx/mise-action@v2
-
+      - run: npm install
       - run: mise run test
 
       - run: mise run lint
