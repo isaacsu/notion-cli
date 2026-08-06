@@ -13,18 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/cache@v5
+      - uses: actions/cache@v6.1.0
         with:
           path: node_modules
           key: my-node-modules
       # - uses: jdx/mise-action@v2
       - run: npm install
-      - run: pwd
-      - run: pwd
-      - run: pwd
-      - run: pwd
-      - run: pwd
-      - run: echo $(env) > env.txt
-      - run: sleep 600
       # - run: mise run test
       # - run: mise run lint
